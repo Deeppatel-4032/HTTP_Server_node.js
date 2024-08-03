@@ -1,5 +1,5 @@
 const http = require("http");
-const fs = require('fs');
+const fs = require("fs");
 let PORT = 5000;
 
 //server create and pass the 2 parameters  req and res
@@ -8,7 +8,7 @@ const myServer =  http.createServer((req, res) => {
     //create random number
     const random = Math.floor(Math.random() * 1000);
     const log = `${random} : new number add\n`;
-    
+
     //appendFile method use
     fs.appendFile("doc.txt", log, () => {
         console.log(req.url);
