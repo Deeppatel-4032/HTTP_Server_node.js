@@ -1,6 +1,6 @@
 const http = require("http");
 const fs = require("fs");
-let PORT = 5000;
+const PORT = 5000;
 
 //server create and pass the 2 parameters  req and res
 const myServer =  http.createServer((req, res) => {
